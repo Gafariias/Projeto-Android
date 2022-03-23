@@ -8,19 +8,10 @@
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        article {
-            columns: 2;
-        }
-
         p {
             font-size: 18px;
             margin: 10px;
         }
-
-        h2 {
-            margin: 10px;
-        }
-
     </style>
 </head>
 <body>
@@ -28,7 +19,7 @@
         <h1>Curiosidades de Tecnologia</h1>
         <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
         <nav>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="noticias.html">Notícias</a>
             <a href="contato.html">Fale Conosco</a>
         </nav>
@@ -38,33 +29,47 @@
             <h1>Fale conosco</h1>
         </div>
         <article>
-            <h2>Ligue para nós</h2>
-            <p><img src="https://img.icons8.com/material-outlined/24/000000/phone.png"/> (41) 2666-7879</p>
-            <h2>Localização</h2>
-            <p><img src="https://img.icons8.com/material/24/000000/worldwide-location--v1.png"/> Rua Itupava 701, Juvevê, Curitiba-PR, 80060-910</p>
-            <h2>Horario comercial</h2>
-            <p><img src="https://img.icons8.com/material-rounded/24/000000/calendar--v2.png"/>Seg a sexta / 11:00 - 18:00</p>
-            <h2>Nossas redes sociais</h2>
-            <br>
-            <a href="https://www.instagram.com"><img src="https://img.icons8.com/glyph-neue/50/000000/instagram-new.png"/></a>
-            <a href="https://www.facebook.com"><img src="https://img.icons8.com/glyph-neue/50/000000/facebook-new.png"/></a>
-            <a href="https://www.twitter.com"><img src="https://img.icons8.com/ios-glyphs/50/000000/twitter--v2.png"/></a>
-            <a href="https://www.linkedin.com"><img src="https://img.icons8.com/glyph-neue/50/000000/linkedin.png"/></a>
-            <h2>Formulario de contato</h2>
-            <p>Escreva seu nome, seu email e o motivo do contato.</p>
-            <div class="form">
-                <input type="text" id="nome" class="forminput" autocomplete="off" placeholder=" ">
-                <label for="nome" class="formlabel">Nome</label>
-            </div>
-            <div class="form2">
-                <input type="text" id="email" class="forminput" autocomplete="off" placeholder=" ">
-                <label for="email" class="formlabel">Email</label>
-            </div>
-            <div class="form3">
-                <input type="text" id="motivo" class="forminput" autocomplete="off" placeholder=" ">
-                <label for="motivo" class="formlabel">Motivo do contato</label>
+            <div class="row">
+                <div class="column">
+                    <h2>Ligue para nós</h2>
+                    <p><img src="https://img.icons8.com/material-outlined/24/000000/phone.png"/> (41) 2666-7879</p>
+                    <h2>Localização</h2>
+                    <p><img src="https://img.icons8.com/material/24/000000/worldwide-location--v1.png"/> Rua Itupava 701, Juvevê, Curitiba-PR, 80060-910</p>
+                    <h2>Horario comercial</h2>
+                    <p><img src="https://img.icons8.com/material-rounded/24/000000/calendar--v2.png"/>Seg a sexta / 11:00 - 18:00</p>
+                    <h2>Nossas redes sociais</h2>
+                    <br>
+                    <a href="https://www.instagram.com"><img src="https://img.icons8.com/glyph-neue/50/000000/instagram-new.png"/></a>
+                    <a href="https://www.facebook.com"><img src="https://img.icons8.com/glyph-neue/50/000000/facebook-new.png"/></a>
+                    <a href="https://www.twitter.com"><img src="https://img.icons8.com/ios-glyphs/50/000000/twitter--v2.png"/></a>
+                    <a href="https://www.linkedin.com"><img src="https://img.icons8.com/glyph-neue/50/000000/linkedin.png"/></a>
+                </div>
+                <div class="column">
+                    <h2>Formulario de contato</h2>
+                    <p>Escreva seu nome, seu email e o motivo do contato.</p>
+                    <div class="form">
+                        <input type="text" id="nome" class="forminput" autocomplete="off" placeholder=" ">
+                        <label for="nome" class="formlabel">Nome</label>
+                    </div>
+                    <div class="form2">
+                        <input type="text" id="email" class="forminput" autocomplete="off" placeholder=" ">
+                        <label for="email" class="formlabel">Email</label>
+                    </div>
+                    <div class="form3">
+                        <input type="text" id="motivo" class="forminput" autocomplete="off" placeholder=" ">
+                        <label for="motivo" class="formlabel">Motivo do contato</label>
+                    </div>
+                    <button id="enviar" onclick="enviar()">Enviar</button>
+                </div>
+                </div>
             </div>
         </article>
+
+        <script>
+            function enviar() {
+                window.alert('Formulario cadastrado com sucesso.')
+            }
+        </script>
     </main>
     <footer>
         Site criado por <span>Gabriel Farias</span> como um exercicio sobre <span>HTML5</span> e <span>CSS3</span>.
